@@ -1,5 +1,6 @@
 /* A Plus Driveways & Landscapes — site styles */
 
+/* Breakpoints (max-width): phone 480 · large-phone 640 · tablet 820 */
 :root {
   --evergreen: #1a3a2a;
   --evergreen-deep: #0f2419;
@@ -20,6 +21,7 @@
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Figtree", system-ui, sans-serif;
   --max: 1120px;
+  --gutter: 1.25rem;
   --header-h: 4.5rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -93,7 +95,7 @@ p:last-child {
 }
 
 .container {
-  width: min(100% - 2.5rem, var(--max));
+  width: min(100% - (2 * var(--gutter)), var(--max));
   margin-inline: auto;
 }
 
@@ -163,7 +165,7 @@ p:last-child {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  width: min(100% - 2.5rem, var(--max));
+  width: min(100% - (2 * var(--gutter)), var(--max));
   margin-inline: auto;
 }
 
@@ -393,7 +395,7 @@ p:last-child {
 .hero__content {
   position: relative;
   z-index: 1;
-  width: min(100% - 2.5rem, var(--max));
+  width: min(100% - (2 * var(--gutter)), var(--max));
   margin-inline: auto;
   max-width: 28rem;
   animation: heroIn 1s var(--ease) both;
@@ -525,9 +527,115 @@ p:last-child {
   margin-top: 2.5rem;
 }
 
+/* —— Large phone / small tablet (≤640) —— */
 @media (max-width: 640px) {
+  :root {
+    --gutter: 1.1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .section {
+    padding: clamp(2.75rem, 10vw, 4rem) 0;
+  }
+
+  .section__lead {
+    font-size: 1.05rem;
+  }
+
+  .brand img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand__name {
+    font-size: 1.05rem;
+  }
+
+  .brand__tag {
+    font-size: 0.62rem;
+  }
+
+  .hero {
+    padding: calc(var(--header-h) + 1.75rem) 0 2.25rem;
+  }
+
+  .hero__logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .hero__brand {
+    font-size: clamp(1.55rem, 7vw, 1.95rem);
+  }
+
+  .hero__content .btn-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__content .btn {
+    width: 100%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
   .qualities {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .ba-grid {
+    gap: 2.25rem;
+    margin-top: 2rem;
+  }
+
+  .job-gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-hero {
+    padding: calc(var(--header-h) + 2rem) 0 1.75rem;
+  }
+
+  .page-hero p {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    padding: 1.35rem;
+  }
+
+  .map-wrap {
+    aspect-ratio: 4 / 3;
+  }
+
+  .cta-band p {
+    margin-bottom: 1.35rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn-group {
+    gap: 0.65rem;
   }
 }
 
@@ -1146,4 +1254,136 @@ p:last-child {
 .projects-link {
   margin-top: 2rem;
   text-align: center;
+}
+
+/* —— Phone (≤480) —— */
+@media (max-width: 480px) {
+  :root {
+    --gutter: 1rem;
+    --header-h: 4rem;
+  }
+
+  .nav-toggle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .brand__tag {
+    max-width: 9.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero__brand-row {
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero__logo {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .hero__brand-sub {
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+  }
+
+  .hero__headline {
+    font-size: 0.98rem;
+  }
+
+  .hero__support {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .quality {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .quality__num {
+    font-size: 1.5rem;
+  }
+
+  .ba-job__title {
+    font-size: 1.2rem;
+  }
+
+  .ba-job__title-hint {
+    width: 100%;
+  }
+
+  .ba-compare {
+    border-radius: var(--radius);
+  }
+
+  .ba-compare__handle::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ba-compare__label {
+    top: 0.5rem;
+    font-size: 0.65rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .ba-compare__label--before {
+    left: 0.5rem;
+  }
+
+  .ba-compare__label--after {
+    right: 0.5rem;
+  }
+
+  .job-gallery__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .contact-form {
+    padding: 1.15rem;
+    border-radius: var(--radius);
+  }
+
+  .terms-item summary {
+    font-size: 1.05rem;
+    padding: 1rem 1.1rem;
+  }
+
+  .terms-item__body {
+    padding: 0 1.1rem 1.15rem;
+  }
+
+  .site-footer {
+    padding: 2.5rem 0 1.75rem;
+  }
+
+  .footer__grid {
+    gap: 1.75rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* —— Narrow phone (≤360) —— */
+@media (max-width: 360px) {
+  :root {
+    --gutter: 0.85rem;
+  }
+
+  .brand__tag {
+    display: none;
+  }
+
+  .hero__content .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .job-gallery__grid {
+    grid-template-columns: 1fr;
+  }
 }
