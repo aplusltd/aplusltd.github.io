@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-label="After placeholder">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d5a3d"/>
+      <stop offset="45%" stop-color="#3d6b4f"/>
+      <stop offset="100%" stop-color="#1a3a2a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="720" fill="url(#g)"/>
+  <rect width="960" height="720" fill="url(#grid)"/>
+  <ellipse cx="720" cy="180" rx="180" ry="120" fill="rgba(107,155,120,0.25)"/>
+  <text x="480" y="340" text-anchor="middle" fill="rgba(243,238,230,0.75)" font-family="system-ui,sans-serif" font-size="28" font-weight="600" letter-spacing="4">AFTER</text>
+  <text x="480" y="380" text-anchor="middle" fill="rgba(243,238,230,0.45)" font-family="system-ui,sans-serif" font-size="16">Photo coming soon</text>
+</svg>

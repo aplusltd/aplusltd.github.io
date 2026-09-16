@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Project photo placeholder">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4cbbd"/>
+      <stop offset="50%" stop-color="#c4b5a0"/>
+      <stop offset="100%" stop-color="#a89882"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <rect x="40" y="40" width="720" height="520" fill="none" stroke="rgba(26,58,42,0.2)" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="400" y="290" text-anchor="middle" fill="rgba(26,58,42,0.55)" font-family="system-ui,sans-serif" font-size="22" font-weight="600">Project photo</text>
+  <text x="400" y="325" text-anchor="middle" fill="rgba(26,58,42,0.4)" font-family="system-ui,sans-serif" font-size="14">Coming soon</text>
+</svg>

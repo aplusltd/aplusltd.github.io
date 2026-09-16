@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-label="Before placeholder">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a5e58"/>
+      <stop offset="50%" stop-color="#6b6e6a"/>
+      <stop offset="100%" stop-color="#4a4d48"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="720" fill="url(#g)"/>
+  <rect width="960" height="720" fill="url(#grid)"/>
+  <text x="480" y="340" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="system-ui,sans-serif" font-size="28" font-weight="600" letter-spacing="4">BEFORE</text>
+  <text x="480" y="380" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="system-ui,sans-serif" font-size="16">Photo coming soon</text>
+</svg>

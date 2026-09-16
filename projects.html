@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | A Plus Driveways &amp; Landscapes</title>
+  <meta name="description" content="Before and after project gallery from A Plus Driveways &amp; Landscapes Ltd — patios, driveways, walls, turfing and more." />
+  <link rel="icon" href="./images/logo2.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="./index.html">
+        <img src="./images/logo2.png" alt="" width="52" height="52" />
+        <span class="brand__text">
+          <span class="brand__name">A Plus LTD</span>
+          <span class="brand__tag">Driveways &amp; Landscapes</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="./index.html">Home</a>
+        <a href="./projects.html" aria-current="page">Projects</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-hero">
+      <div class="container">
+        <p class="section__eyebrow">Our work</p>
+        <h1>Projects</h1>
+        <p>Drag each slider to compare before and after. Click a project name to open its full photo gallery.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="ba-grid">
+
+          <article class="ba-job" id="job-patio">
+            <div class="ba-job__meta">
+              <p class="ba-job__type">Patio</p>
+              <h2 class="ba-job__title">
+                <button type="button" class="ba-job__title-btn" aria-expanded="false" aria-controls="gallery-patio">
+                  Rear patio refresh
+                  <span class="ba-job__title-hint">View gallery</span>
+                </button>
+              </h2>
+              <p class="ba-job__location">Luton</p>
+            </div>
+            <div class="ba-compare">
+              <img class="ba-compare__img ba-compare__before" src="./images/placeholders/before.svg" alt="Before: rear patio refresh in Luton" width="960" height="720" />
+              <img class="ba-compare__img ba-compare__after" src="./images/placeholders/after.svg" alt="After: rear patio refresh in Luton" width="960" height="720" />
+              <span class="ba-compare__label ba-compare__label--before">Before</span>
+              <span class="ba-compare__label ba-compare__label--after">After</span>
+              <div class="ba-compare__handle" aria-hidden="true"></div>
+              <label class="sr-only" for="ba-1">Compare before and after</label>
+              <input id="ba-1" type="range" min="0" max="100" value="50" />
+            </div>
+            <div class="job-gallery" id="gallery-patio" hidden>
+              <div class="job-gallery__head">
+                <p class="job-gallery__label">Project photos</p>
+                <button type="button" class="job-gallery__close" data-close-gallery>Close gallery</button>
+              </div>
+              <ul class="job-gallery__grid">
+                <li><img src="./images/placeholders/gallery.svg" alt="Rear patio refresh — photo 1" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Rear patio refresh — photo 2" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Rear patio refresh — photo 3" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Rear patio refresh — photo 4" width="800" height="600" loading="lazy" /></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="ba-job" id="job-driveway">
+            <div class="ba-job__meta">
+              <p class="ba-job__type">Driveway</p>
+              <h2 class="ba-job__title">
+                <button type="button" class="ba-job__title-btn" aria-expanded="false" aria-controls="gallery-driveway">
+                  Front driveway remodel
+                  <span class="ba-job__title-hint">View gallery</span>
+                </button>
+              </h2>
+              <p class="ba-job__location">Bedfordshire</p>
+            </div>
+            <div class="ba-compare">
+              <img class="ba-compare__img ba-compare__before" src="./images/placeholders/before.svg" alt="Before: front driveway remodel in Bedfordshire" width="960" height="720" />
+              <img class="ba-compare__img ba-compare__after" src="./images/placeholders/after.svg" alt="After: front driveway remodel in Bedfordshire" width="960" height="720" />
+              <span class="ba-compare__label ba-compare__label--before">Before</span>
+              <span class="ba-compare__label ba-compare__label--after">After</span>
+              <div class="ba-compare__handle" aria-hidden="true"></div>
+              <label class="sr-only" for="ba-2">Compare before and after</label>
+              <input id="ba-2" type="range" min="0" max="100" value="50" />
+            </div>
+            <div class="job-gallery" id="gallery-driveway" hidden>
+              <div class="job-gallery__head">
+                <p class="job-gallery__label">Project photos</p>
+                <button type="button" class="job-gallery__close" data-close-gallery>Close gallery</button>
+              </div>
+              <ul class="job-gallery__grid">
+                <li><img src="./images/placeholders/gallery.svg" alt="Front driveway remodel — photo 1" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Front driveway remodel — photo 2" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Front driveway remodel — photo 3" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Front driveway remodel — photo 4" width="800" height="600" loading="lazy" /></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="ba-job" id="job-walls">
+            <div class="ba-job__meta">
+              <p class="ba-job__type">Walls &amp; columns</p>
+              <h2 class="ba-job__title">
+                <button type="button" class="ba-job__title-btn" aria-expanded="false" aria-controls="gallery-walls">
+                  Garden retaining walls
+                  <span class="ba-job__title-hint">View gallery</span>
+                </button>
+              </h2>
+              <p class="ba-job__location">Hertfordshire</p>
+            </div>
+            <div class="ba-compare">
+              <img class="ba-compare__img ba-compare__before" src="./images/placeholders/before.svg" alt="Before: garden retaining walls in Hertfordshire" width="960" height="720" />
+              <img class="ba-compare__img ba-compare__after" src="./images/placeholders/after.svg" alt="After: garden retaining walls in Hertfordshire" width="960" height="720" />
+              <span class="ba-compare__label ba-compare__label--before">Before</span>
+              <span class="ba-compare__label ba-compare__label--after">After</span>
+              <div class="ba-compare__handle" aria-hidden="true"></div>
+              <label class="sr-only" for="ba-3">Compare before and after</label>
+              <input id="ba-3" type="range" min="0" max="100" value="50" />
+            </div>
+            <div class="job-gallery" id="gallery-walls" hidden>
+              <div class="job-gallery__head">
+                <p class="job-gallery__label">Project photos</p>
+                <button type="button" class="job-gallery__close" data-close-gallery>Close gallery</button>
+              </div>
+              <ul class="job-gallery__grid">
+                <li><img src="./images/placeholders/gallery.svg" alt="Garden retaining walls — photo 1" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Garden retaining walls — photo 2" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Garden retaining walls — photo 3" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Garden retaining walls — photo 4" width="800" height="600" loading="lazy" /></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="ba-job" id="job-turfing">
+            <div class="ba-job__meta">
+              <p class="ba-job__type">Turfing</p>
+              <h2 class="ba-job__title">
+                <button type="button" class="ba-job__title-btn" aria-expanded="false" aria-controls="gallery-turfing">
+                  New lawn installation
+                  <span class="ba-job__title-hint">View gallery</span>
+                </button>
+              </h2>
+              <p class="ba-job__location">Luton</p>
+            </div>
+            <div class="ba-compare">
+              <img class="ba-compare__img ba-compare__before" src="./images/placeholders/before.svg" alt="Before: new lawn installation in Luton" width="960" height="720" />
+              <img class="ba-compare__img ba-compare__after" src="./images/placeholders/after.svg" alt="After: new lawn installation in Luton" width="960" height="720" />
+              <span class="ba-compare__label ba-compare__label--before">Before</span>
+              <span class="ba-compare__label ba-compare__label--after">After</span>
+              <div class="ba-compare__handle" aria-hidden="true"></div>
+              <label class="sr-only" for="ba-4">Compare before and after</label>
+              <input id="ba-4" type="range" min="0" max="100" value="50" />
+            </div>
+            <div class="job-gallery" id="gallery-turfing" hidden>
+              <div class="job-gallery__head">
+                <p class="job-gallery__label">Project photos</p>
+                <button type="button" class="job-gallery__close" data-close-gallery>Close gallery</button>
+              </div>
+              <ul class="job-gallery__grid">
+                <li><img src="./images/placeholders/gallery.svg" alt="New lawn installation — photo 1" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="New lawn installation — photo 2" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="New lawn installation — photo 3" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="New lawn installation — photo 4" width="800" height="600" loading="lazy" /></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="ba-job" id="job-walkway">
+            <div class="ba-job__meta">
+              <p class="ba-job__type">Walkway</p>
+              <h2 class="ba-job__title">
+                <button type="button" class="ba-job__title-btn" aria-expanded="false" aria-controls="gallery-walkway">
+                  Front path &amp; entrance
+                  <span class="ba-job__title-hint">View gallery</span>
+                </button>
+              </h2>
+              <p class="ba-job__location">Dunstable</p>
+            </div>
+            <div class="ba-compare">
+              <img class="ba-compare__img ba-compare__before" src="./images/placeholders/before.svg" alt="Before: front path and entrance in Dunstable" width="960" height="720" />
+              <img class="ba-compare__img ba-compare__after" src="./images/placeholders/after.svg" alt="After: front path and entrance in Dunstable" width="960" height="720" />
+              <span class="ba-compare__label ba-compare__label--before">Before</span>
+              <span class="ba-compare__label ba-compare__label--after">After</span>
+              <div class="ba-compare__handle" aria-hidden="true"></div>
+              <label class="sr-only" for="ba-5">Compare before and after</label>
+              <input id="ba-5" type="range" min="0" max="100" value="50" />
+            </div>
+            <div class="job-gallery" id="gallery-walkway" hidden>
+              <div class="job-gallery__head">
+                <p class="job-gallery__label">Project photos</p>
+                <button type="button" class="job-gallery__close" data-close-gallery>Close gallery</button>
+              </div>
+              <ul class="job-gallery__grid">
+                <li><img src="./images/placeholders/gallery.svg" alt="Front path and entrance — photo 1" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Front path and entrance — photo 2" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Front path and entrance — photo 3" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Front path and entrance — photo 4" width="800" height="600" loading="lazy" /></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="ba-job" id="job-garden">
+            <div class="ba-job__meta">
+              <p class="ba-job__type">Full garden</p>
+              <h2 class="ba-job__title">
+                <button type="button" class="ba-job__title-btn" aria-expanded="false" aria-controls="gallery-garden">
+                  Complete garden redesign
+                  <span class="ba-job__title-hint">View gallery</span>
+                </button>
+              </h2>
+              <p class="ba-job__location">Bedfordshire</p>
+            </div>
+            <div class="ba-compare">
+              <img class="ba-compare__img ba-compare__before" src="./images/placeholders/before.svg" alt="Before: complete garden redesign in Bedfordshire" width="960" height="720" />
+              <img class="ba-compare__img ba-compare__after" src="./images/placeholders/after.svg" alt="After: complete garden redesign in Bedfordshire" width="960" height="720" />
+              <span class="ba-compare__label ba-compare__label--before">Before</span>
+              <span class="ba-compare__label ba-compare__label--after">After</span>
+              <div class="ba-compare__handle" aria-hidden="true"></div>
+              <label class="sr-only" for="ba-6">Compare before and after</label>
+              <input id="ba-6" type="range" min="0" max="100" value="50" />
+            </div>
+            <div class="job-gallery" id="gallery-garden" hidden>
+              <div class="job-gallery__head">
+                <p class="job-gallery__label">Project photos</p>
+                <button type="button" class="job-gallery__close" data-close-gallery>Close gallery</button>
+              </div>
+              <ul class="job-gallery__grid">
+                <li><img src="./images/placeholders/gallery.svg" alt="Complete garden redesign — photo 1" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Complete garden redesign — photo 2" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Complete garden redesign — photo 3" width="800" height="600" loading="lazy" /></li>
+                <li><img src="./images/placeholders/gallery.svg" alt="Complete garden redesign — photo 4" width="800" height="600" loading="lazy" /></li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark cta-band">
+      <div class="container reveal">
+        <h2>Have a similar project in mind?</h2>
+        <p>Tell us about your outdoor space — we’ll advise on materials, layout and next steps.</p>
+        <div class="btn-group" style="justify-content: center;">
+          <a class="btn btn--primary" href="./contact.html">Request a quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <img src="./images/logo2.png" alt="" width="44" height="44" />
+            <span>A Plus Driveways &amp; Landscapes</span>
+          </div>
+          <p>Quality patios, driveways and landscaping for homes across Luton and the surrounding area.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer__links">
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./termsandconditions.html">Terms &amp; conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul class="footer__links">
+            <li><a href="tel:07446644794">07446 644794</a></li>
+            <li><a href="mailto:adrivewaysandpatios@gmail.com">adrivewaysandpatios@gmail.com</a></li>
+            <li>37 Ridgway Road, Luton, LU2 7RP</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>Copyright © 2026 A Plus Driveways &amp; Landscapes Ltd</span>
+        <span>Company No. 14109597 · VAT 418-5633-85</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/site.js" defer></script>
+</body>
+</html>
